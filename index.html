@@ -425,6 +425,27 @@ a{color:inherit;text-decoration:none}
 .platform-card .p-url{font-family:var(--font-mono);font-size:10px;color:var(--steel);margin-top:8px;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;letter-spacing:.3px}
 .platform-note{font-family:var(--font-mono);font-size:11px;color:var(--steel);margin-top:28px;letter-spacing:.5px;display:flex;gap:8px;align-items:center}
 .platform-note::before{content:"▲";color:var(--accent);font-size:9px}
+
+/* ============ Legal (disclaimer / terms / privacy) ============ */
+.legal-sec{background:var(--bg);border-top:1px solid var(--line);padding:88px 0}
+.legal-inner{max-width:1000px;margin:0 auto;padding:0 24px}
+.legal-sec .eyebrow{color:var(--accent);font-family:var(--font-mono);font-size:12px;letter-spacing:3px;text-transform:uppercase;margin-bottom:14px}
+.legal-title{font-family:var(--font-display);font-weight:700;font-size:clamp(26px,4vw,40px);text-transform:uppercase;line-height:1.1;color:var(--ink)}
+.legal-lead{color:var(--steel);font-size:14px;line-height:1.8;margin-top:14px;max-width:760px}
+.legal-block{margin-top:18px;border:1px solid var(--line);border-radius:12px;background:#fff;overflow:hidden}
+.legal-block summary{cursor:pointer;padding:18px 22px;display:flex;align-items:baseline;gap:12px;font-family:var(--font-display);font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:.5px;color:var(--ink);list-style:none}
+.legal-block summary::-webkit-details-marker{display:none}
+.legal-block summary .l-num{font-family:var(--font-mono);font-size:12px;color:var(--accent);flex:none}
+.legal-block summary .l-sub{font-family:var(--font-mono);font-size:10.5px;color:var(--steel);text-transform:none;letter-spacing:0;font-weight:400}
+.legal-block summary::after{content:"+";margin-left:auto;font-family:var(--font-mono);font-size:18px;color:var(--accent);transition:transform .2s}
+.legal-block[open] summary::after{transform:rotate(45deg)}
+.legal-body{padding:4px 22px 24px;color:var(--steel);font-size:13.5px;line-height:1.9}
+.legal-body h5{font-family:var(--font-mono);font-size:11px;letter-spacing:1.5px;color:var(--accent);text-transform:uppercase;margin:18px 0 6px}
+.legal-body p{margin:6px 0}
+.legal-body ul{margin:6px 0 6px 18px;list-style:disc}
+.legal-body li{margin:4px 0}
+.legal-body a{color:var(--accent-deep);text-decoration:underline}
+@media(max-width:640px){.legal-inner{padding:0 16px}}
 </style>
 </head>
 <body>
@@ -1160,7 +1181,7 @@ a{color:inherit;text-decoration:none}
         </div>
       </div>
 
-      <p class="platform-note">Curated international directory — updated as the field moves. Know a platform we should add? Open an issue on GitHub.</p>
+      <p class="platform-note">Curated international directory — updated as the field moves. All platform names and logos are trademarks of their respective owners; listings are informational only and imply no endorsement. Know a platform we should add? Open an issue on GitHub.</p>
     </div>
   </section>
 
@@ -1188,6 +1209,71 @@ a{color:inherit;text-decoration:none}
   </section>
 </main>
 
+<!-- ============ Legal: Disclaimer / Terms / Privacy ============ -->
+<section class="legal-sec" id="legal">
+  <div class="legal-inner">
+    <p class="eyebrow">SYS.06 / LEGAL</p>
+    <h2 class="legal-title">Disclaimer · Terms · Privacy</h2>
+    <p class="legal-lead">Embodied Frontier Robot Community is an open, non-commercial community site. Please read the following statements carefully before using the site. By accessing or using this site you agree to these terms. If you do not agree, please do not use the site.</p>
+
+    <details class="legal-block" id="disclaimer" open>
+      <summary><span class="l-num">01</span>Disclaimer</summary>
+      <div class="legal-body">
+        <h5>Informational purpose only</h5>
+        <p>All content on this site — including industry timelines, statistics, technical explainers, robot catalog entries, field notes and directory listings — is compiled from public reports, press coverage and community discussion, and is provided for reference, learning and discussion only. It does not constitute professional, investment, legal, financial, medical, engineering or any other kind of professional advice, and it must not be relied upon as such.</p>
+        <h5>Data &amp; sources</h5>
+        <p>Figures and claims are drawn from third-party public sources (analyst reports, company announcements, media, research papers) at the time of writing. They may be incomplete, outdated or change after publication. Always verify against the original source cited on the page. We make no representation or warranty, express or implied, as to the accuracy, completeness, currency or fitness of any content for any purpose.</p>
+        <h5>No endorsement</h5>
+        <p>Mention of any company, product, brand or platform — including every entry in the Robot &amp; Embodied-AI Directory — is purely informational and is not an endorsement, affiliation, sponsorship or recommendation. All trademarks, service marks and names belong to their respective owners.</p>
+        <h5>External links</h5>
+        <p>Third-party websites linked from this site are outside our control. We are not responsible for their content, accuracy, availability or privacy practices. Links are provided for convenience only.</p>
+        <h5>AI-generated visuals</h5>
+        <p>Illustrations used across this site are AI-generated artistic representations for demonstration purposes. They do not depict, represent or claim to be any specific product, company or real device.</p>
+        <h5>Use at your own risk</h5>
+        <p>Your use of the site and reliance on its content is entirely at your own risk. To the maximum extent permitted by law, Embodied Frontier Robot Community and its contributors accept no liability for any loss or damage arising from the use of this site.</p>
+      </div>
+    </details>
+
+    <details class="legal-block" id="terms">
+      <summary><span class="l-num">02</span>Terms of Use</summary>
+      <div class="legal-body">
+        <h5>Acceptance</h5>
+        <p>By accessing or using this site you agree to be bound by these Terms of Use. If you do not agree with any part of these terms, you must stop using the site.</p>
+        <h5>Open community &amp; open source</h5>
+        <p>Embodied Frontier Robot Community is an open, non-commercial community project. Its source code is published as open source in the project repository, subject to the license stated there. The site itself is free to browse and use.</p>
+        <h5>User-contributed content</h5>
+        <p>If you submit or post content to the community (for example via the project repository, issues, discussions or any public channel), you are solely responsible for that content. By submitting content you grant the community a non-exclusive, royalty-free, worldwide license to display, reproduce and share it in connection with the site. You confirm that you own the content or have the right to share it, and that it does not infringe any third-party rights.</p>
+        <h5>Acceptable use</h5>
+        <p>You agree not to misuse the site or the community: no unlawful, infringing, defamatory, harassing, hateful or sexually explicit content; no spam, scams, impersonation or phishing; no attempts to disrupt, scrape or harm the site, its infrastructure or other users.</p>
+        <h5>Moderation</h5>
+        <p>We may edit, remove or refuse any content, account or submission at any time, with or without notice, for any reason, including content that violates these terms or applicable law.</p>
+        <h5>Intellectual property</h5>
+        <p>Site text, design and original code are © Embodied Frontier Robot Community. Third-party trademarks, product names and logos referenced on this site belong to their respective owners and are used for identification only. User-contributed content remains owned by its authors under the license above.</p>
+        <h5>Changes to these terms</h5>
+        <p>We may update these terms from time to time. Continued use of the site after changes are published constitutes acceptance of the updated terms.</p>
+        <h5>Limitation of liability</h5>
+        <p>The site is provided "as is" and "as available", without warranties of any kind, express or implied. To the maximum extent permitted by applicable law, Embodied Frontier Robot Community and its contributors are not liable for any direct, indirect, incidental or consequential damages arising from use of the site.</p>
+      </div>
+    </details>
+
+    <details class="legal-block" id="privacy">
+      <summary><span class="l-num">03</span>Privacy Policy</summary>
+      <div class="legal-body">
+        <h5>What this site collects</h5>
+        <p>This is a static website hosted on GitHub Pages. The site itself does not run analytics, advertising, tracking scripts, cookies or local storage of its own, and it does not collect, store or process any personal data directly.</p>
+        <h5>Third-party platforms</h5>
+        <p>Community interaction happens on third-party platforms — primarily GitHub (the project repository, issues and discussions). Any data you provide there, including account information and posted content, is governed by that platform's own privacy policy and terms, not by this site. Please review GitHub's Privacy Statement for details.</p>
+        <h5>External links &amp; the Directory</h5>
+        <p>Links in the Robot &amp; Embodied-AI Directory and elsewhere lead to third-party websites with their own privacy practices. This site is not responsible for how those sites collect or use your data.</p>
+        <h5>Server logs &amp; hosting</h5>
+        <p>Hosting infrastructure (GitHub Pages) may maintain standard server logs in accordance with its own policies. We do not access such logs for profiling, advertising or any purpose other than routine site operation and security.</p>
+        <h5>Your rights &amp; contact</h5>
+        <p>Because we do not collect personal data, there is generally nothing to access, correct or delete on our side. If you have a privacy or rights concern, or would like to request removal of content, please open an issue in the project repository or contact us through the repository page.</p>
+      </div>
+    </details>
+  </div>
+</section>
+
 <!-- ============ Footer ============ -->
 <footer class="footer">
   <div class="footer-inner">
@@ -1212,15 +1298,17 @@ a{color:inherit;text-decoration:none}
           <li><a href="https://github.com/jeuigi78638/embodied-frontier" target="_blank" rel="noopener">GitHub Repository</a></li>
           <li><a href="https://github.com/jeuigi78638/embodied-frontier/issues" target="_blank" rel="noopener">Discussions &amp; Submissions</a></li>
           <li><a href="#join">Join the Community</a></li>
+          <li><a href="#legal">Legal · Terms · Privacy</a></li>
         </ul>
         <p class="legal" style="margin-top:14px">
-          Data sources: 36Kr, IDC, China Economic Net, Hunan MIIT, Robot Times, EEWorld and other public reporting (2026).<br>
-          Disclaimer: vendor and product details are subject to official announcements; page images are AI-generated illustrations and do not represent any specific product; all trademarks and names belong to their respective owners.
+          © 2026 Embodied Frontier Robot Community. All rights reserved. Site text and design are original works of the community; all trademarks, product names and logos belong to their respective owners and are referenced for identification only.<br>
+          Data sources: 36Kr, IDC, China Economic Net, Hunan MIIT, Robot Times, EEWorld and other public reporting (2026); figures are subject to the original sources.<br>
+          Page images are AI-generated illustrations and do not represent any specific product. Nothing on this site is endorsement, professional advice or investment guidance — see Disclaimer, Terms of Use &amp; Privacy Policy.
         </p>
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© 2026 EMBODIED FRONTIER ROBOT COMMUNITY</span>
+      <span>© 2026 EMBODIED FRONTIER ROBOT COMMUNITY · ALL RIGHTS RESERVED</span>
       <span>BUILT WITH OPEN SOURCE · HOSTED ON GITHUB PAGES</span>
     </div>
   </div>
