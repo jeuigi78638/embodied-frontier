@@ -403,6 +403,28 @@ a{color:inherit;text-decoration:none}
   .display{font-size:52px}
   .hero-actions .btn{flex:1}
 }
+
+/* ============ Platform directory (toolkit) ============ */
+.platform-sec{margin-bottom:38px}
+.platform-sec:last-child{margin-bottom:0}
+.platform-kick{
+  font-family:var(--font-mono);font-size:11px;letter-spacing:2px;color:var(--accent);
+  display:flex;align-items:center;gap:8px;margin-bottom:14px;
+}
+.platform-kick::before{content:"";width:18px;height:1px;background:var(--accent)}
+.platform-kick b{color:var(--ink);letter-spacing:.5px}
+.platform-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(236px,1fr));gap:14px}
+.platform-card{
+  display:block;border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;background:#fff;
+  transition:transform .15s,box-shadow .15s,border-color .15s;
+}
+.platform-card:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(23,27,31,.07);border-color:var(--accent)}
+.platform-card .p-name{font-size:15px;font-weight:700;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.platform-card .p-name svg{width:14px;height:14px;color:var(--accent);flex:none;opacity:.85}
+.platform-card .p-desc{font-size:12.5px;color:var(--ink-2);margin-top:3px}
+.platform-card .p-url{font-family:var(--font-mono);font-size:10px;color:var(--steel);margin-top:8px;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;letter-spacing:.3px}
+.platform-note{font-family:var(--font-mono);font-size:11px;color:var(--steel);margin-top:28px;letter-spacing:.5px;display:flex;gap:8px;align-items:center}
+.platform-note::before{content:"▲";color:var(--accent);font-size:9px}
 </style>
 </head>
 <body>
@@ -423,6 +445,7 @@ a{color:inherit;text-decoration:none}
       <a href="#frontier">Frontier Lab</a>
       <a href="#archive">Robot Archive</a>
       <a href="#notes">Field Notes</a>
+      <a href="#platforms">Directory</a>
     </nav>
     <a class="btn btn-join" href="#join">Join</a>
     <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
@@ -892,6 +915,255 @@ a{color:inherit;text-decoration:none}
     </div>
   </section>
 
+  <!-- ============ S5 Platform Directory / toolkit ============ -->
+  <section class="section" id="platforms">
+    <div class="section-inner">
+      <header class="sec-head reveal">
+        <p class="sec-kicker">SYS.05 / PLATFORM HUB</p>
+        <h2 class="sec-title">Robot &amp; Embodied-AI Directory</h2>
+        <p class="sec-sub">One-click access to the world's leading robot and embodied-AI platforms — builders, research labs, development tools, benchmarks and communities. Every card opens the official site in a new tab.</p>
+        <svg class="dim" viewBox="0 0 520 14" aria-hidden="true"><line x1="0" y1="7" x2="520" y2="7" stroke="#B9BDB4" stroke-width="1"/><path d="M0 1v12M520 1v12" stroke="#E4570E" stroke-width="2"/><path d="M0 3l6 4-6 4M520 3l-6 4 6 4" fill="none" stroke="#E4570E" stroke-width="1.4"/><line x1="260" y1="3" x2="260" y2="11" stroke="#B9BDB4" stroke-width="1"/></svg>
+      </header>
+
+      <div class="platform-sec">
+        <p class="platform-kick">01 / <b>HUMANOID &amp; ROBOT BUILDERS</b></p>
+        <div class="platform-grid">
+          <a class="platform-card" href="https://www.figure.ai/" target="_blank" rel="noopener">
+            <span class="p-name">Figure AI<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">General-purpose humanoid · Helix AI · Figure 03</span>
+            <span class="p-url">figure.ai</span>
+          </a>
+          <a class="platform-card" href="https://bostondynamics.com/" target="_blank" rel="noopener">
+            <span class="p-name">Boston Dynamics<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">Electric Atlas humanoid · Spot · Stretch</span>
+            <span class="p-url">bostondynamics.com</span>
+          </a>
+          <a class="platform-card" href="https://www.tesla.com/optimus" target="_blank" rel="noopener">
+            <span class="p-name">Tesla Optimus<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">Humanoid designed for mass manufacturing</span>
+            <span class="p-url">tesla.com/optimus</span>
+          </a>
+          <a class="platform-card" href="https://agilityrobotics.com/" target="_blank" rel="noopener">
+            <span class="p-name">Agility Robotics<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">Digit · first commercially deployed humanoid</span>
+            <span class="p-url">agilityrobotics.com</span>
+          </a>
+          <a class="platform-card" href="https://www.1x.tech/" target="_blank" rel="noopener">
+            <span class="p-name">1X Technologies<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">NEO humanoid · home &amp; work assistance</span>
+            <span class="p-url">1x.tech</span>
+          </a>
+          <a class="platform-card" href="https://apptronik.com/" target="_blank" rel="noopener">
+            <span class="p-name">Apptronik<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">Apollo · general-purpose humanoid</span>
+            <span class="p-url">apptronik.com</span>
+          </a>
+          <a class="platform-card" href="https://sanctuary.ai/" target="_blank" rel="noopener">
+            <span class="p-name">Sanctuary AI<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">Physical AI robots for industry</span>
+            <span class="p-url">sanctuary.ai</span>
+          </a>
+          <a class="platform-card" href="https://www.unitree.com/" target="_blank" rel="noopener">
+            <span class="p-name">Unitree Robotics<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">G1/H1 humanoids · Go2 quadrupeds</span>
+            <span class="p-url">unitree.com</span>
+          </a>
+          <a class="platform-card" href="https://www.ubtech.com/" target="_blank" rel="noopener">
+            <span class="p-name">UBTECH Robotics<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">Walker S · industrial humanoid</span>
+            <span class="p-url">ubtech.com</span>
+          </a>
+          <a class="platform-card" href="https://www.agile-robots.com/en" target="_blank" rel="noopener">
+            <span class="p-name">Agile Robots<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">Munich-based AI-driven robotics</span>
+            <span class="p-url">agile-robots.com</span>
+          </a>
+          <a class="platform-card" href="https://www.clonerobotics.com/" target="_blank" rel="noopener">
+            <span class="p-name">Clone Robotics<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">Biomimetic musculoskeletal humanoid</span>
+            <span class="p-url">clonerobotics.com</span>
+          </a>
+          <a class="platform-card" href="https://www.fourierintelligence.com/" target="_blank" rel="noopener">
+            <span class="p-name">Fourier Intelligence<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">GR-3 humanoid · rehab robotics</span>
+            <span class="p-url">fourierintelligence.com</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="platform-sec">
+        <p class="platform-kick">02 / <b>EMBODIED AI LABS &amp; PLATFORMS</b></p>
+        <div class="platform-grid">
+          <a class="platform-card" href="https://deepmind.google/" target="_blank" rel="noopener">
+            <span class="p-name">DeepMind Robotics<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">Gemini Robotics · foundation models</span>
+            <span class="p-url">deepmind.google</span>
+          </a>
+          <a class="platform-card" href="https://developer.nvidia.com/isaac" target="_blank" rel="noopener">
+            <span class="p-name">NVIDIA Isaac<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">Robotics dev platform · GR00T</span>
+            <span class="p-url">developer.nvidia.com/isaac</span>
+          </a>
+          <a class="platform-card" href="https://openai.com/" target="_blank" rel="noopener">
+            <span class="p-name">OpenAI<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">Frontier AI lab · robotics initiatives</span>
+            <span class="p-url">openai.com</span>
+          </a>
+          <a class="platform-card" href="https://www.physicalintelligence.company/" target="_blank" rel="noopener">
+            <span class="p-name">Physical Intelligence<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">π (pi) robot foundation models</span>
+            <span class="p-url">physicalintelligence.company</span>
+          </a>
+          <a class="platform-card" href="https://ai.meta.com/" target="_blank" rel="noopener">
+            <span class="p-name">Meta AI Robotics<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">Mobility &amp; manipulation research</span>
+            <span class="p-url">ai.meta.com</span>
+          </a>
+          <a class="platform-card" href="https://www.skild.ai/" target="_blank" rel="noopener">
+            <span class="p-name">Skild AI<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">Scalable robot foundation models</span>
+            <span class="p-url">skild.ai</span>
+          </a>
+          <a class="platform-card" href="https://developer.nvidia.com/isaac/sim" target="_blank" rel="noopener">
+            <span class="p-name">Isaac Sim<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">GPU-accelerated robot simulation</span>
+            <span class="p-url">developer.nvidia.com/isaac/sim</span>
+          </a>
+          <a class="platform-card" href="https://new.abb.com/products/robotics" target="_blank" rel="noopener">
+            <span class="p-name">ABB Robotics<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">Industrial robot arms &amp; automation</span>
+            <span class="p-url">new.abb.com/products/robotics</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="platform-sec">
+        <p class="platform-kick">03 / <b>DEV &amp; SIMULATION</b></p>
+        <div class="platform-grid">
+          <a class="platform-card" href="https://docs.ros.org/" target="_blank" rel="noopener">
+            <span class="p-name">ROS 2<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">Open-source robot operating system</span>
+            <span class="p-url">docs.ros.org</span>
+          </a>
+          <a class="platform-card" href="https://gazebosim.org/" target="_blank" rel="noopener">
+            <span class="p-name">Gazebo<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">Physics-based robot simulation</span>
+            <span class="p-url">gazebosim.org</span>
+          </a>
+          <a class="platform-card" href="https://mujoco.org/" target="_blank" rel="noopener">
+            <span class="p-name">MuJoCo<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">DeepMind's physics engine</span>
+            <span class="p-url">mujoco.org</span>
+          </a>
+          <a class="platform-card" href="https://github.com/huggingface/lerobot" target="_blank" rel="noopener">
+            <span class="p-name">LeRobot<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">Hugging Face real-world robot learning</span>
+            <span class="p-url">github.com/huggingface/lerobot</span>
+          </a>
+          <a class="platform-card" href="https://developer.nvidia.com/isaac/lab" target="_blank" rel="noopener">
+            <span class="p-name">Isaac Lab<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">GPU robot-learning framework</span>
+            <span class="p-url">developer.nvidia.com/isaac/lab</span>
+          </a>
+          <a class="platform-card" href="https://pybullet.org/" target="_blank" rel="noopener">
+            <span class="p-name">PyBullet<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">Fast physics for robotics &amp; RL</span>
+            <span class="p-url">pybullet.org</span>
+          </a>
+          <a class="platform-card" href="https://moveit.ros.org/" target="_blank" rel="noopener">
+            <span class="p-name">MoveIt<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">Motion planning framework</span>
+            <span class="p-url">moveit.ros.org</span>
+          </a>
+          <a class="platform-card" href="https://foxglove.dev/" target="_blank" rel="noopener">
+            <span class="p-name">Foxglove<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">Robot data visualization &amp; debugging</span>
+            <span class="p-url">foxglove.dev</span>
+          </a>
+          <a class="platform-card" href="https://www.coppeliarobotics.com/" target="_blank" rel="noopener">
+            <span class="p-name">CoppeliaSim<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">Versatile robot simulator (V-REP)</span>
+            <span class="p-url">coppeliarobotics.com</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="platform-sec">
+        <p class="platform-kick">04 / <b>BENCHMARKS &amp; DATASETS</b></p>
+        <div class="platform-grid">
+          <a class="platform-card" href="https://humanoid-bench.github.io/" target="_blank" rel="noopener">
+            <span class="p-name">HumanoidBench<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">Whole-body humanoid benchmark</span>
+            <span class="p-url">humanoid-bench.github.io</span>
+          </a>
+          <a class="platform-card" href="https://github.com/Lifelong-Robot-Learning/LIBERO" target="_blank" rel="noopener">
+            <span class="p-name">LIBERO<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">Long-horizon manipulation benchmark</span>
+            <span class="p-url">github.com/Lifelong-Robot-Learning/LIBERO</span>
+          </a>
+          <a class="platform-card" href="https://robotics-transformer-x.github.io/" target="_blank" rel="noopener">
+            <span class="p-name">Open X-Embodiment<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">Cross-embodiment dataset &amp; RT-X</span>
+            <span class="p-url">robotics-transformer-x.github.io</span>
+          </a>
+          <a class="platform-card" href="https://robosuite.ai/" target="_blank" rel="noopener">
+            <span class="p-name">RoboSuite<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">Modular manipulation simulation</span>
+            <span class="p-url">robosuite.ai</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="platform-sec">
+        <p class="platform-kick">05 / <b>NEWS &amp; COMMUNITIES</b></p>
+        <div class="platform-grid">
+          <a class="platform-card" href="https://www.therobotreport.com/" target="_blank" rel="noopener">
+            <span class="p-name">The Robot Report<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">Robotics industry news &amp; analysis</span>
+            <span class="p-url">therobotreport.com</span>
+          </a>
+          <a class="platform-card" href="https://spectrum.ieee.org/robotics" target="_blank" rel="noopener">
+            <span class="p-name">IEEE Spectrum<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">Robotics · authoritative tech journalism</span>
+            <span class="p-url">spectrum.ieee.org/robotics</span>
+          </a>
+          <a class="platform-card" href="https://robohub.org/" target="_blank" rel="noopener">
+            <span class="p-name">Robohub<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">Robotics community &amp; podcasts</span>
+            <span class="p-url">robohub.org</span>
+          </a>
+          <a class="platform-card" href="https://www.ieee-ras.org/" target="_blank" rel="noopener">
+            <span class="p-name">IEEE RAS<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">Robotics &amp; Automation Society</span>
+            <span class="p-url">ieee-ras.org</span>
+          </a>
+          <a class="platform-card" href="https://www.roboticsandautomationnews.com/" target="_blank" rel="noopener">
+            <span class="p-name">R&amp;A News<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">Robotics &amp; automation daily news</span>
+            <span class="p-url">roboticsandautomationnews.com</span>
+          </a>
+          <a class="platform-card" href="https://hackaday.com/" target="_blank" rel="noopener">
+            <span class="p-name">Hackaday<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">Maker projects, hacks &amp; robots</span>
+            <span class="p-url">hackaday.com</span>
+          </a>
+          <a class="platform-card" href="https://www.reddit.com/r/robotics/" target="_blank" rel="noopener">
+            <span class="p-name">Reddit r/robotics<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">Active global robotics community</span>
+            <span class="p-url">reddit.com/r/robotics</span>
+          </a>
+          <a class="platform-card" href="https://www.robobusiness.com/" target="_blank" rel="noopener">
+            <span class="p-name">RoboBusiness<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <span class="p-desc">Commercial robotics events &amp; media</span>
+            <span class="p-url">robobusiness.com</span>
+          </a>
+        </div>
+      </div>
+
+      <p class="platform-note">Curated international directory — updated as the field moves. Know a platform we should add? Open an issue on GitHub.</p>
+    </div>
+  </section>
+
   <!-- ============ Join ============ -->
   <section class="join" id="join">
     <div class="join-inner">
@@ -931,6 +1203,7 @@ a{color:inherit;text-decoration:none}
           <li><a href="#frontier">Frontier Lab</a></li>
           <li><a href="#archive">Robot Archive</a></li>
           <li><a href="#notes">Field Notes</a></li>
+          <li><a href="#platforms">Directory</a></li>
         </ul>
       </div>
       <div>
