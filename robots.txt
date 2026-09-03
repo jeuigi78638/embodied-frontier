@@ -1,0 +1,33 @@
+# Embodied Frontier Robot Community — robots.txt
+# Site: https://jeuigi78638.github.io/embodied-frontier/
+# This file only guides well-behaved crawlers. Attack traffic does not
+# honor robots.txt; abuse is mitigated at the GitHub Pages platform layer.
+
+# Allow normal search engines to index the site.
+User-agent: *
+Allow: /
+
+# Block known aggressive / low-value scrapers and scanners.
+User-agent: Bytespider
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
